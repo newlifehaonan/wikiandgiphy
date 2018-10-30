@@ -1,0 +1,12 @@
+<h1>Search History is here !</h1>
+<div *ngIf="searchHistories.length == 0">
+  nothing here
+</div>
+<div *ngIf="searchHistories.length != 0">
+  something is here
+  <div *ngFor="let item of searchHistories">
+    <b>{{item.searchText}}</b>was searched at <b>{{item.createAt}}</b>
+  </div>
+</div>
+
+<button [routerLink] = "['']">Go Back to search</button>

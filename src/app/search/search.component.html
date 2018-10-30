@@ -1,0 +1,13 @@
+<div  *ngIf="terms.length != 0">
+  <div *ngFor="let term of terms">
+    <h1>{{term.Title}}</h1>
+    <p>{{term.Description}}</p>
+    <a href="{{term.url}}">{{term.url}}</a>
+  </div>
+</div>
+
+<div *ngIf="terms.length === 0">
+  <h1>Sorry There's nothing in there</h1>
+</div>
+
+

@@ -2,10 +2,17 @@
 // `ng build ---prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-export const environment = {
-  production: false
+export const dbconfig = {
+  apiKey: 'AIzaSyDjVZbcx2FHQ5Gj3JCK5vVYYS8QRKqjdHk',
+  authDomain: 'contact-78185.firebaseapp.com',
+  databaseURL: 'https://contact-78185.firebaseio.com',
+  projectId: 'contact-78185',
+  storageBucket: 'contact-78185.appspot.com',
+  messagingSenderId: '779939474269'
 };
-
+export const giphy = {
+  apiKey: 'zb9b9F5o0amK7Yuq9veD0PexmHiIlB2t'
+}
 /*
  * In development mode, for easier debugging, you can ignore zone related error
  * stack frames such as `zone.run`/`zoneDelegate.invokeTask` by importing the
