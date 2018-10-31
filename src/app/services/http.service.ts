@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Term} from '../models/Term';
-import {Observable, Subject} from 'rxjs';
+import {Subject} from 'rxjs';
 import { giphy } from '../../environments/environment';
 
 @Injectable()
@@ -24,11 +24,9 @@ export class HttpService {
       responseType: 'text'
     });
   }
-
   searchGiphy(keyword: string) {
     return this.httpClient.get(`https://api.giphy.com/v1/gifs/search?api_key=${giphy.apiKey}&q=${keyword}&limit=15&offset=0&rating=G&lang=en`);
   }
-
   addTerm(term: Term[]) {
     this.term.next(term);
   }

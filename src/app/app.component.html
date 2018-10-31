@@ -1,8 +1,7 @@
 <div class="form-inline">
   <input class="form-control" type="text" id="search-input" [(ngModel)] = "searchText">
   <button class="btn btn-primary" [routerLink]="['search']" (click)="onSearchWiki()">Search Wiki</button>
-  <button class="btn btn-primary" [routerLink]="['searchImg']" (click)="onSearchGiphy()">Search Img</button>
+  <button class="btn btn-primary"  [routerLink]="['searchImg']" (click)="onSearchGiphy()">Search Img</button>
   <button class="btn btn-secondary" [routerLink] = "['searchHistory']" (click)="onShowHistory()">Show Search history</button>
 </div>
-
 <router-outlet></router-outlet>

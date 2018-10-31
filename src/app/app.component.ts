@@ -6,11 +6,13 @@ import { History } from './models/history';
 import {uuid} from './utilities/uuid';
 import {DbService} from './services/db.service';
 import 'rxjs/add/operator/map';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   title = 'wikiandgiphy';
   searchText = '';
@@ -68,7 +70,6 @@ export class AppComponent {
         }
       );
       this.http.addimg(this.imgurl);
-      // console.log(this.imgurl);
     }
   }
   private onCreateHistory(keyword: string, timestamp: string) {

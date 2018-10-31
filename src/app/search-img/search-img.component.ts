@@ -12,7 +12,6 @@ export class SearchImgComponent implements OnInit, OnDestroy {
   private subscription: Subscription;
   imgUrls: string[] = [];
   constructor(private http: HttpService) { }
-
   ngOnInit() {
     this.subscription = this.http.img.subscribe(
       (imgUrls: string[]) => {
